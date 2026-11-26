@@ -24,6 +24,10 @@ A skill teaches an agent what to do. An anti-skill teaches it what not to do. Ea
 
 Copy a skill folder into `~/.claude/skills/` (personal) or `.claude/skills/` (per project). Other agents that read `SKILL.md` files work the same way.
 
+## Contributing
+
+You can add a rule to an existing anti-skill or write a new one. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Where the rules come from
 
 `no-sales-slop` comes from about 35 unsolicited pitches sent to a conference inbox in October and November 2026. The rules describe patterns. No sender, company or product is named.
