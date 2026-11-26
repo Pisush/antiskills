@@ -6,6 +6,8 @@ Anti-skills only work if they come from real bad output that a person actually s
 
 Open an issue with the **Share a bad example** form and paste the slop you received. Replace names, emails, phone numbers, company and product names, links and addresses with placeholders like [NAME] or [COMPANY]. Issues are public, so please check twice. We turn the examples into rules. The examples themselves never go into a skill.
 
+What happens next: a maintainer reads the issue and adds the label `turn-into-rules`. An agent then drafts new or updated rules and opens a pull request. A maintainer reviews it before anything is merged.
+
 ## Add a rule to an existing anti-skill
 
 1. Open an issue or a pull request against the skill's `SKILL.md`.
