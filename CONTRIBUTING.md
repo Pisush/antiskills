@@ -10,8 +10,8 @@ Anti-skills only work if they come from real bad output that a person actually s
 
 ## Add a new anti-skill
 
-1. Create a folder `skills/<name>/` with a `SKILL.md` inside. Use lowercase letters and hyphens for the name.
-2. Start the file with the two required fields:
+1. Copy `template/SKILL.md` into a new folder `skills/<name>/`. Use lowercase letters and hyphens for the name.
+2. Fill in the two required fields at the top:
 
    ```yaml
    ---
@@ -23,7 +23,8 @@ Anti-skills only work if they come from real bad output that a person actually s
 3. Write rules, not examples. A list of "do not" lines works better than pasted bad output, and the agent will not learn to copy it.
 4. Keep it short. Under 100 lines is a good target.
 5. End with a short check the agent can run before it is done.
-6. Add a row for it to the table in the README.
+6. Add a row for it to the table in the README, and its path to `.claude-plugin/marketplace.json`.
+7. Open a pull request. The template asks where the patterns come from and how you tested it. No issue is needed first.
 
 ## Rules for every contribution
 
@@ -31,3 +32,7 @@ Anti-skills only work if they come from real bad output that a person actually s
 - **Do not paste the original messages, code or text.** They contain other people's personal data and words. Describe the pattern instead.
 - **Do not name people, companies or products.** The goal is better work, not shaming.
 - **Test it.** Run the agent on the same few tasks with and without the anti-skill, and say in the pull request what changed. If it made no difference, it does not belong here.
+
+## License
+
+By contributing, you agree that your contribution is published under the MIT License of this repo.

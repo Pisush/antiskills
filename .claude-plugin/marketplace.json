@@ -1,0 +1,21 @@
+{
+  "name": "antiskills",
+  "owner": {
+    "name": "Natalie Pistunovich"
+  },
+  "metadata": {
+    "description": "Anti-skills: rules that stop agents from producing slop",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "antiskills",
+      "description": "All anti-skills in this repo",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/no-sales-slop"
+      ]
+    }
+  ]
+}
