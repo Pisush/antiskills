@@ -1,6 +1,10 @@
 # Contributing
 
-Anti-skills only work if they come from real bad output that a person actually saw. Contributions are welcome. Please read this first.
+Anti-skills only work if they come from real bad output that a person actually saw. Contributions are welcome. The easiest one takes two minutes.
+
+## Share a bad example (easiest)
+
+Open an issue with the **Share a bad example** form and paste the slop you received. Replace names, emails, phone numbers, company and product names, links and addresses with placeholders like [NAME] or [COMPANY]. Issues are public, so please check twice. We turn the examples into rules. The examples themselves never go into a skill.
 
 ## Add a rule to an existing anti-skill
 
@@ -29,7 +33,7 @@ Anti-skills only work if they come from real bad output that a person actually s
 ## Rules for every contribution
 
 - **Base it on things you received or reviewed yourself.** You may use AI to help with the wording, but you must have seen each pattern with your own eyes. That is the point of this repo.
-- **Do not paste the original messages, code or text.** They contain other people's personal data and words. Describe the pattern instead.
+- **Skills contain rules, not examples.** Anonymized examples belong in issues. Inside a `SKILL.md`, describe the pattern instead of pasting it.
 - **Do not name people, companies or products.** The goal is better work, not shaming.
 - **Test it.** Run the agent on the same few tasks with and without the anti-skill, and say in the pull request what changed. If it made no difference, it does not belong here.
 

@@ -33,7 +33,7 @@ Or copy a skill folder into `~/.claude/skills/` (personal) or `.claude/skills/` 
 
 ## Contributing
 
-You can add a rule to an existing anti-skill or write a new one. See [CONTRIBUTING.md](CONTRIBUTING.md).
+The easiest way: [share a bad example](https://github.com/Pisush/antiskills/issues/new?template=bad-example.yml) you received, with names and other identifying details replaced by placeholders. You can also add a rule to an existing anti-skill or write a new one. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Where the rules come from
 

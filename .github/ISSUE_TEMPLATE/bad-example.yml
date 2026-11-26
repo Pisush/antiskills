@@ -1,0 +1,44 @@
+name: Share a bad example
+description: Paste slop you received, with identifying details removed. We turn it into rules.
+title: "[example] "
+labels: ["bad-example"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. This issue is public, so remove anything that identifies a person or company before you paste.
+        Replace names, emails, phone numbers, company and product names, websites and addresses with placeholders like [NAME], [COMPANY], [PRODUCT], [URL].
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of output is it?
+      options:
+        - Cold sales or outreach email
+        - Beta or "free access" invitation
+        - AI-generated code or pull request
+        - AI-generated text (post, article, docs)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: The example, anonymized
+      description: Paste the text. Placeholders instead of names.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What made it slop?
+      description: Optional. One line per thing you noticed is enough.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Before you submit
+      options:
+        - label: I removed names, emails, phone numbers, company and product names, links and addresses.
+          required: true
+        - label: I received or reviewed this myself.
+          required: true
