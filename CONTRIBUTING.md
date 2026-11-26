@@ -4,7 +4,7 @@ Anti-skills only work if they come from real bad output that a person actually s
 
 ## Share a bad example (easiest)
 
-Open an issue with the **Share a bad example** form and paste the slop you received. Replace names, emails, phone numbers, company and product names, links and addresses with placeholders like [NAME] or [COMPANY]. Issues are public, so please check twice. We turn the examples into rules. The examples themselves never go into a skill.
+Open an issue with the **Share a bad example** form and paste the slop you received. Replace names, emails, phone numbers, company and product names, links and addresses with placeholders like [NAME] or [COMPANY]. Issues are public, so please check twice. Quote only what shows the pattern. If personal data slips through, we delete the whole issue, see [SECURITY.md](SECURITY.md). We turn the examples into rules. The examples themselves never go into a skill. Tick the box in the form if you want your GitHub handle credited in the skill.
 
 What happens next: a maintainer reads the issue and adds the label `turn-into-rules`. An agent then drafts new or updated rules and opens a pull request. A maintainer reviews it before anything is merged.
 
@@ -29,7 +29,7 @@ What happens next: a maintainer reads the issue and adds the label `turn-into-ru
 3. Write rules, not examples. A list of "do not" lines works better than pasted bad output, and the agent will not learn to copy it.
 4. Keep it short. Under 100 lines is a good target.
 5. End with a short check the agent can run before it is done.
-6. Add a row for it to the table in the README, and its path to `.claude-plugin/marketplace.json`.
+6. Add a row for it to the table in the README.
 7. Open a pull request. The template asks where the patterns come from and how you tested it. No issue is needed first.
 
 ## Rules for every contribution

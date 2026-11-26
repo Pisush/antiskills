@@ -1,5 +1,38 @@
 # antiskills
 
+An anti-skill is a `SKILL.md` file of "do not" rules, written from real bad output that people received. Load it into your agent so it stops producing that output.
+
+## Install
+
+Any agent that reads skills (Claude Code, Codex, Cursor and others):
+
+```
+npx skills add Pisush/antiskills
+```
+
+Claude Code, as a plugin:
+
+```
+claude plugin marketplace add Pisush/antiskills
+claude plugin install antiskills@antiskills
+```
+
+Or tell your agent: "Install the no-sales-slop skill from https://github.com/Pisush/antiskills".
+
+## Skills
+
+| Skill | Use it when an agent... | Rules | Built from |
+|---|---|---|---|
+| [no-sales-slop](skills/no-sales-slop/SKILL.md) | writes cold outreach: sales emails, demo requests, partnership offers, beta invitations | 20 | about 35 pitches, Oct to Nov 2026 |
+
+## Share a bad example
+
+Got slop? [Share it in an issue](https://github.com/Pisush/antiskills/issues/new?template=bad-example.yml), with names and other identifying details replaced by placeholders. We turn examples into rules. No sender, company or product is ever named in a skill. Not sure if it counts? [Ask in Discussions](https://github.com/Pisush/antiskills/discussions).
+
+More ways to help are in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Why
+
 Building software up to a proof of concept is now cheap. Marketing it is cheap too. So both are on the rise. When the work behind them is not done well, the agent only amplifies the bad work.
 
 Slop is getting easy to spot, and unpleasant to read.
@@ -10,34 +43,9 @@ As a conference organizer I get a lot of sales slop. Some of it asks me to pay. 
 
 In software engineering we have patterns, and around them grew anti-patterns. Now we have skills. Here is to the rise of anti-skills.
 
-## What an anti-skill is
+## How anti-skills are made
 
-A skill teaches an agent what to do. An anti-skill teaches it what not to do. Each one is a short list of rules, written from real examples of bad output. The examples themselves stay out, so the agent does not learn to copy them.
-
-## Skills
-
-| Skill | Use it when an agent... |
-|---|---|
-| [no-sales-slop](skills/no-sales-slop/SKILL.md) | writes cold outreach: sales emails, demo requests, partnership offers, beta invitations |
-
-## Install
-
-In Claude Code:
-
-```
-/plugin marketplace add Pisush/antiskills
-/plugin install antiskills@antiskills
-```
-
-Or copy a skill folder into `~/.claude/skills/` (personal) or `.claude/skills/` (per project). Other agents that read `SKILL.md` files work the same way.
-
-## Contributing
-
-The easiest way: [share a bad example](https://github.com/Pisush/antiskills/issues/new?template=bad-example.yml) you received, with names and other identifying details replaced by placeholders. You can also add a rule to an existing anti-skill or write a new one. See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Where the rules come from
-
-`no-sales-slop` comes from about 35 unsolicited pitches sent to a conference inbox in October and November 2026. The rules describe patterns. No sender, company or product is named.
+Each anti-skill is a short list of rules. The bad examples themselves stay out, so the agent does not learn to copy them. Research on skills found that "do not" rules help agents more than long examples ([Signal or Noise?, 2026](https://arxiv.org/abs/2608.23067)).
 
 ## License
 

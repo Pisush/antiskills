@@ -1,6 +1,6 @@
 ---
 name: no-sales-slop
-description: Rules for writing cold outreach that a busy person will read instead of delete. Use when drafting or reviewing a sales email, demo request, partnership or sponsorship offer, beta invitation, or follow-up to someone who has not replied.
+description: Stops an agent from writing cold outreach that gets deleted unread. Use when drafting or reviewing a sales email, demo request, partnership or sponsorship offer, beta invitation, or follow-up to someone who has not replied.
 ---
 
 # No sales slop
@@ -48,3 +48,5 @@ The reader gets many emails like yours every week and deletes most of them withi
 5. Would you send it if your name, not a sales team, were on it?
 
 If any answer is no, fix it or do not send.
+
+Contributors: Pisush

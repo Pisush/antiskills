@@ -17,4 +17,3 @@
 - [ ] No people, companies or products are named.
 - [ ] Each rule says what not to do and why, in one or two sentences.
 - [ ] New skills: the folder has a `SKILL.md` with `name` and `description`, and a row in the README table.
-- [ ] New skills: added to `.claude-plugin/marketplace.json`.

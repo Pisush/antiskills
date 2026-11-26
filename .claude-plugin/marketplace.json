@@ -11,11 +11,7 @@
     {
       "name": "antiskills",
       "description": "All anti-skills in this repo",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/no-sales-slop"
-      ]
+      "source": "./"
     }
   ]
 }

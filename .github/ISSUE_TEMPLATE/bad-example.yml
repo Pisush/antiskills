@@ -8,6 +8,8 @@ body:
       value: |
         Thank you. This issue is public, so remove anything that identifies a person or company before you paste.
         Replace names, emails, phone numbers, company and product names, websites and addresses with placeholders like [NAME], [COMPANY], [PRODUCT], [URL].
+        Quote only what is needed to show the pattern, not the whole message.
+        If personal data slips through, we delete the issue. Editing is not enough, because GitHub keeps the edit history.
   - type: dropdown
     id: kind
     attributes:
@@ -42,3 +44,5 @@ body:
           required: true
         - label: I received or reviewed this myself.
           required: true
+        - label: You may credit me by my GitHub handle in the skill.
+          required: false
